@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home | Back to School </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/top_menu.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css"></ink>
+
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/solid.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/brands.css">
+
+	<style type="text/css">
+
+		#image_wrap{
+			width: 100%;
+			height: 420px;
+		}
+
+		#image_wrap img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.deskripsi-l{
+			/*width: 40%;
+			float: left;*/
+			text-align: left;
+			font-size: 25px;
+		}
+
+		.deskripsi-r{
+			/*width: 40%;*/
+			float: right;
+			text-align: right;
+			font-size: 25px;
+		}
+
+		.judul-layanan-l{
+			/*width: 30%;
+			float: left;*/
+			text-align: left;
+			font-size: 20px;
+			padding-left: 20px;
+		}
+
+		.judul-layanan-r{
+			/*width: 30%;*/
+			float: right;
+			text-align: right;
+			font-size: 20px;
+			padding-right: 20px;
+		}
+
+		.img-layanan-l{
+			/*width: 20%;
+			float: left;*/
+			padding: 5px;
+		}
+
+		.img-layanan-r{
+			/*width: 20%;*/
+			float: right;
+			padding: 5px;
+		}
+
+		.image_service{
+			max-width: 250px;
+			max-height: 250px;
+		}
+
+		.image_service img{
+			width: 100%;
+			height: 100%;
+		}
+
+
+		#logo_wrapper{
+			width: 20%;
+			/*height: 100px;*/
+			margin: auto;
+		}
+
+		#row1 img{
+			max-width: 100%;
+			height: auto;
+		}
+		
+
+		#row1{
+			text-align: center;
+			padding: 10px;
+		}
+
+		#row2{
+			padding: 40px;
+			/*background-color: #74b9ff;*/
+			background-color: #41b6e6;
+			color: white;
+			overflow: hidden;
+		}
+
+		#row3{
+			padding: 40px;
+			overflow: hidden;
+			background-color: #ff585d;
+			color: white;
+			/*background-color: #55efc4;*/
+		}
+
+		#row4{
+			padding: 40px;
+			background-color: #dfe4ea;
+			overflow: hidden;
+			text-align: left;
+		}
+
+		#click_register{
+			text-align: right;
+			margin-top: 20px;
+		}
+
+		.btn{
+			border-radius: 10px;
+		}
+
+		@media only screen and (max-width: 767px){
+			.deskripsi-l, .deskripsi-r, .judul-layanan-l, .judul-layanan-r, .img-layanan-l, .img-layanan-r 
+			{
+				text-align: center;
+			}
+
+			.image_service{
+				margin:auto;
+			}
+
+			#click_register{
+				margin-top: 35px;
+			}
+		}
+
+		@media only screen and (max-width: 600px){
+			.deskripsi-r, .judul-layanan-r, .img-layanan-r{
+				float: none;
+			}
+
+			#logo_wrapper{
+				width: 35%;
+			}
+
+			#row4{
+				text-align: center;
+			}
+
+			#click_register{
+				text-align: center;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="top-menu" id="menu-atas">
+		<a href="home.html" id="logo" title="Backtoschool">
+			<div id="img_logo"> 
+				<img src="image/LOGO.png">
+			</div>
+		</a>
+		<a href="javascript:void(0);" id="menu-icon"><i class="fas fa-bars"></i></a>
+		<div class="mainMenu" id="main_menu">
+			<a href="home.html" class="active">Beranda</a>	
+			<div id="drop">
+				<button href="#" id="btn_dropdown">Layanan <i class="fas fa-caret-down"></i></button>
+				<div id="isi_dropdown">
+					<a href="les_streaming-intro.html">Les Straming</a>
+					<a href="pesan_tutor-intro.html">Pesan Tutor (Privat)</a>
+				</div>	
+			</div>
+			<a href="about.html">Tentang Kami </a>
+			<a href="login.html">Login</a>
+			<a href="daftar.html">Register</a>
+		</div>		
+	</div>
+
+	<div class="main-picture">
+		<div id="image_wrap">
+			<img src="image/main_image.jpg">
+		</div>
+	</div>
+
+	<div class="main-body">
+		<div id="row1">
+			<!-- <h1>Back to School</h1> -->
+			<div id="logo_wrapper">
+				<img src="image/LOGO.png">
+			</div>
+			<h4><i>Mari Belajar dengan Teknologi</i></h4>
+		</div>
+
+		<div id="row2">
+			<div class="kol-2 kol-m-5 img-layanan-l">
+				<div class="image_service">
+					<img src="image/MONITOR.png">
+				</div>
+			</div>
+
+			<div class="kol-4 kol-m-6 judul-layanan-l">
+				<h1>Les Streaming</h1>
+			</div>
+
+			<div class="kol-5 kol-m-12 deskripsi-l">
+				<p>Layanan bimbingan belajar berbasis video streaming yang menyajikan berbagai materi belajar. Dibawakan oleh guru-guru terbaik dengan penjelasan yang mudah dimengerti</p>
+			</div>
+		</div>
+
+		<div id="row3">
+			<div class="kol-2 kol-m-5 img-layanan-r">
+				<div class="image_service">
+					<img src="image/TUTOR.png">
+				</div>
+			</div>
+
+			<div class="kol-4 kol-m-6 judul-layanan-r">
+				<h1>Pesan Tutor</h1>
+			</div>
+
+			<div class="kol-5 kol-m-12 deskripsi-r">
+				<p>Butuh tutor atau guru privat? Cukup pesan di sini dan tentukan mata pelajaran, hari, jam durasi, dan jumlah pertemuan sesuai keinginan. Dapat berkelompok maksimal 5 orang.</p>
+			</div>
+		</div>
+
+		<div id="row4">
+			<div id="img_register">
+				<img src="">
+			</div>
+
+			<div id="line_register" class="kol-6 kol-m-6">
+				<h1>AYO GABUNG SEKARANG JUGA</h1>
+			</div>
+
+			<div id="click_register" class="kol-5 kol-m-5">
+				<a href="#" class="btn btn_utama btn_bsr">DAFTAR</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="foot-col">
+			<div class="foot-col-in">
+				<h3>Tentang Backtoschool</h3>
+				<li><a href="#">Tentang kami</a></li>
+				<li><a href="#">Kontak kami</a></li>
+			</div>
+			
+			<div class="foot-col-in">
+				<h3>Layanan Kami</h3>
+				<li><a href="#">Les Streaming</a></li>
+				<li><a href="#">Pesan Tutor</a></li>
+				
+			</div>
+		</div>
+		
+		<div class="foot-col">
+			<div class="foot-col-in">
+				<h3>Lainnya</h3>
+				<li><a href="#">Syarat dan Ketentuan</a></li>
+				<li><a href="#">Kebijakan Privasi</a></li>
+			</div>
+
+			<div class="foot-col-in">
+				<h3>Ikuti kami di</h3>
+				<div id="social_media">
+					<a href="#"><i class="fab fa-facebook"></i></a>&ensp;
+					<a href="#"><i class="fab fa-twitter"></i></a>&ensp;
+					<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="bottom-line">
+		<b>&copy; 2019 Backtoschool All Right Reserved</b>
+	</div>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/top_menu.js"></script>
+</body>
+</html>
